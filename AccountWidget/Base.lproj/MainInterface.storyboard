@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="AccountWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="account" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-ou-1Fz">
+                                <rect key="frame" x="85" y="10" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Bpn-JM-fpZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="k7Z-1l-Sf3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5W-ZT-gkK">
+                                <rect key="frame" x="164" y="90" width="140" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kTH-68-vdV"/>
+                                </constraints>
+                                <state key="normal" title="Confirm" backgroundImage="widget_button_bg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmAction:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Dfn-wv-lyV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj5-cS-pej">
+                                <rect key="frame" x="16" y="90" width="140" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3Br-fO-3qr"/>
+                                </constraints>
+                                <state key="normal" title="Breakfast" backgroundImage="widget_button_bg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickTypeAction:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="WIG-2D-TPD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bj5-cS-pej" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="2IA-QO-pUA"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="bj5-cS-pej" secondAttribute="bottom" constant="16" id="77G-T0-daX"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="u5W-ZT-gkK" secondAttribute="bottom" constant="16" id="8Rf-YP-qpU"/>
+                            <constraint firstItem="iAw-ou-1Fz" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="OSE-BJ-uGc"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="u5W-ZT-gkK" secondAttribute="trailing" constant="16" id="UNM-cT-BEJ"/>
+                            <constraint firstItem="bj5-cS-pej" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.5" constant="-20" id="bSE-9D-pF5"/>
+                            <constraint firstItem="iAw-ou-1Fz" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="10" id="guh-vd-TZ1"/>
+                            <constraint firstItem="u5W-ZT-gkK" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" multiplier="0.5" constant="-20" id="hH6-Vl-S2e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="accountField" destination="iAw-ou-1Fz" id="Kif-FJ-tt9"/>
+                        <outlet property="typeButton" destination="bj5-cS-pej" id="x5y-Fh-goY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="widget_button_bg" width="149" height="44"/>
+    </resources>
+</document>

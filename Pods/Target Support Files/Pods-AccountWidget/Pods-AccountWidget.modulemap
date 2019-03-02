@@ -1,0 +1,6 @@
+framework module Pods_AccountWidget {
+  umbrella header "Pods-AccountWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

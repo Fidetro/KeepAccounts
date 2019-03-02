@@ -1,0 +1,10 @@
+platform:ios,'10.0'
+use_frameworks!
+target 'KeepAccounts' do
+pod 'SwiftFFDB'
+pod 'SnapKit'
+end
+
+target 'AccountWidget' do
+pod 'SwiftFFDB'
+end

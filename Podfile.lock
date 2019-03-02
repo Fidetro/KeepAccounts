@@ -1,0 +1,26 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - SnapKit (4.2.0)
+  - SwiftFFDB (2.0.1.0):
+    - FMDB (~> 2.7.2)
+
+DEPENDENCIES:
+  - SnapKit
+  - SwiftFFDB
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
+    - SnapKit
+    - SwiftFFDB
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftFFDB: 711dd626ce206c2c02840ec79468865add1760ac
+
+PODFILE CHECKSUM: 1935c520a92ddfef899f97472dee8cacab0cc0d9
+
+COCOAPODS: 1.5.3
